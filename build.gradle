@@ -1,5 +1,4 @@
 tasks.register("execTest") {
-    echo "execTest - step"
     dependsOn pullRep
     exec {
         workingDir 'batFiles'
