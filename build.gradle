@@ -7,5 +7,5 @@ tasks.register("execTest") {
 }
 
 task pullRep(type: Exec) {
-    commandLine "git", "pull"
+    commandLine "git", "pull", "https://github.com/Chovhan/PipelineTester.git", "master"
 }
