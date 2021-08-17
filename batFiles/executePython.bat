@@ -1,4 +1,4 @@
 @echo off
 cd ../
-python -u Scripts\Hello.py
+python -u TesterScripts\Hello.py
 pause
