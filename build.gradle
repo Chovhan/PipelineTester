@@ -1,0 +1,13 @@
+tasks.register("execTest") {
+    echo "execTest - step"
+    dependsOn pullRep
+    exec {
+        workingDir 'batFiles'
+        commandLine "cmd", "/c", "executePython.bat"
+    }
+}
+
+task pullRep(type: Exec) {
+    workingDir 'Scripts'
+    commandLine "git", "pull"
+}
