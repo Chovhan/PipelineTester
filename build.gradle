@@ -7,6 +7,5 @@ tasks.register("execTest") {
 }
 
 task pullRep(type: Exec) {
-    workingDir 'Scripts'
     commandLine "git", "pull"
 }
